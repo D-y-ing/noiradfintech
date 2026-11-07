@@ -1,0 +1,13 @@
+{
+  "escrowBalanceXlm": "95.0000000",
+  "perDealCapXlm": "5.0",
+  "dailySpentXlm": "15.0000000",
+  "dailyCapXlm": "20.0",
+  "expiresAt": 1794667674,
+  "appliedPaymentIds": [
+    "a48c4e17095a1492bba6048854451451aeaf48b8f53445a0124cb3609bbf91bd",
+    "a8539fbf599204f9bd3348f1f84bb41ab321199a95648c9a41cfa9b41e51f794",
+    "da28cd311ddd9a8eb090aef9343738b6d8b638f9bdc3885b973cb0d9908ccaca"
+  ],
+  "lastTopupAt": 1794064666201
+}

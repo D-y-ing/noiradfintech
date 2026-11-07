@@ -1,0 +1,3659 @@
+[
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063024922
+    },
+    "status": "skipped",
+    "timestamp": 1794063024922
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063024922
+    },
+    "status": "skipped",
+    "timestamp": 1794063024922
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063024922
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063024922
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063024922
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063024922
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063024922
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063024922
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063024922
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063024922
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794062874846",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794060335053.2996,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063054940
+    },
+    "status": "skipped",
+    "timestamp": 1794063054940
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794062874846",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060117286.4849,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063054940
+    },
+    "status": "skipped",
+    "timestamp": 1794063054940
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063054940
+    },
+    "status": "skipped",
+    "timestamp": 1794063054940
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063054940
+    },
+    "status": "skipped",
+    "timestamp": 1794063054940
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063054940
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063054940
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063054940
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063054940
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063054940
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063054940
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063054940
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063054940
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794062874846",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794060335053.2996,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063084947
+    },
+    "status": "skipped",
+    "timestamp": 1794063084947
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794062874846",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060117286.4849,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063084947
+    },
+    "status": "skipped",
+    "timestamp": 1794063084947
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063084947
+    },
+    "status": "skipped",
+    "timestamp": 1794063084947
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063084947
+    },
+    "status": "skipped",
+    "timestamp": 1794063084947
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063084947
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063084947
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063084947
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063084947
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063084947
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063084947
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063084947
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063084947
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794062874846",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794060335053.2996,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063114965
+    },
+    "status": "skipped",
+    "timestamp": 1794063114965
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794062874846",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060117286.4849,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063114965
+    },
+    "status": "skipped",
+    "timestamp": 1794063114965
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063114965
+    },
+    "status": "skipped",
+    "timestamp": 1794063114965
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063114965
+    },
+    "status": "skipped",
+    "timestamp": 1794063114965
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063114965
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063114965
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063114965
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063114965
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063114965
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063114965
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063114965
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063114965
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794062874846",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794060335053.2996,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063144968
+    },
+    "status": "skipped",
+    "timestamp": 1794063144968
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794062874846",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060117286.4849,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063144968
+    },
+    "status": "skipped",
+    "timestamp": 1794063144968
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063144968
+    },
+    "status": "skipped",
+    "timestamp": 1794063144968
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063144968
+    },
+    "status": "skipped",
+    "timestamp": 1794063144968
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063144968
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063144968
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063144968
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063144968
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063144968
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063144968
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063144968
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063144968
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794062874846",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794060335053.2996,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063174982
+    },
+    "status": "skipped",
+    "timestamp": 1794063174982
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794062874846",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060117286.4849,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063174982
+    },
+    "status": "skipped",
+    "timestamp": 1794063174982
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063174982
+    },
+    "status": "skipped",
+    "timestamp": 1794063174982
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063174982
+    },
+    "status": "skipped",
+    "timestamp": 1794063174982
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063174982
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063174982
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063174982
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063174982
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063174982
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063174982
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063174982
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063174982
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794062874846",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794060335053.2996,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063204996
+    },
+    "status": "skipped",
+    "timestamp": 1794063204996
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794062874846",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060117286.4849,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063204996
+    },
+    "status": "skipped",
+    "timestamp": 1794063204996
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063204996
+    },
+    "status": "skipped",
+    "timestamp": 1794063204996
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063204996
+    },
+    "status": "skipped",
+    "timestamp": 1794063204996
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063204996
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063204996
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063204996
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063204996
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063204996
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063204996
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063204996
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063204996
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794062874846",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794060335053.2996,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063235011
+    },
+    "status": "skipped",
+    "timestamp": 1794063235011
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794062874846",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060117286.4849,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063235011
+    },
+    "status": "skipped",
+    "timestamp": 1794063235011
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063235011
+    },
+    "status": "skipped",
+    "timestamp": 1794063235011
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063235011
+    },
+    "status": "skipped",
+    "timestamp": 1794063235011
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063235011
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063235011
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063235011
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063235011
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063235011
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063235011
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063235011
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063235011
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794062874846",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794060335053.2996,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063265024
+    },
+    "status": "skipped",
+    "timestamp": 1794063265024
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794062874846",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060117286.4849,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063265024
+    },
+    "status": "skipped",
+    "timestamp": 1794063265024
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063265024
+    },
+    "status": "skipped",
+    "timestamp": 1794063265024
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063265024
+    },
+    "status": "skipped",
+    "timestamp": 1794063265024
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063265024
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063265024
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063265024
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063265024
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063265024
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063265024
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063265024
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063265024
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794062874846",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794060335053.2996,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063295029
+    },
+    "status": "skipped",
+    "timestamp": 1794063295029
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794062874846",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060117286.4849,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063295029
+    },
+    "status": "skipped",
+    "timestamp": 1794063295029
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063295029
+    },
+    "status": "skipped",
+    "timestamp": 1794063295029
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063295029
+    },
+    "status": "skipped",
+    "timestamp": 1794063295029
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063295029
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063295029
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063295030
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063295030
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063295030
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063295030
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063295030
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063295030
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794062874846",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794060335053.2996,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063325042
+    },
+    "status": "skipped",
+    "timestamp": 1794063325042
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794062874846",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060117286.4849,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063325042
+    },
+    "status": "skipped",
+    "timestamp": 1794063325042
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063325042
+    },
+    "status": "skipped",
+    "timestamp": 1794063325042
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063325042
+    },
+    "status": "skipped",
+    "timestamp": 1794063325042
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063325042
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063325042
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063325042
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063325042
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063325042
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063325042
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063325042
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063325042
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794062874846",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794060335053.2996,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063355055
+    },
+    "status": "skipped",
+    "timestamp": 1794063355055
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794062874846",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060117286.4849,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063355055
+    },
+    "status": "skipped",
+    "timestamp": 1794063355055
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794062874846",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794059405172.6323,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063355055
+    },
+    "status": "skipped",
+    "timestamp": 1794063355055
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c16_17_1794062874846",
+          "creatorId": "c16",
+          "creatorHandle": "@blake_blogs",
+          "creatorWallet": "GCREATOR16PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP",
+          "platform": "x",
+          "content": "Q&A: Your art questions answered 🔥 VIRAL SPIKE ACTIVATED 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 890000,
+            "shares": 3900,
+            "comments": 3625,
+            "likes": null
+          },
+          "timestamp": 1794062356555.6416,
+          "url": "https://x.com/blake_blogs/status/17"
+        },
+        "vvi": 181434,
+        "delta": {
+          "views": 881100,
+          "shares": 3822,
+          "comments": 3480,
+          "minutes": 5
+        }
+      },
+      "sponsor": "SKIPPED",
+      "amountXlm": "0",
+      "reason": "Already paid",
+      "brandSafe": true,
+      "timestamp": 1794063355055
+    },
+    "status": "skipped",
+    "timestamp": 1794063355055
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c2_3_1794062874846",
+          "creatorId": "c2",
+          "creatorHandle": "@maya_makes",
+          "creatorWallet": "GCREATOR2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "platform": "tiktok",
+          "content": "Behind the scenes of my latest project 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 560000,
+            "shares": 2250,
+            "comments": 800,
+            "likes": null
+          },
+          "timestamp": 1794061003017.1257,
+          "url": "https://tiktok.com/maya_makes/status/3"
+        },
+        "vvi": 113392.2,
+        "delta": {
+          "views": 554400,
+          "shares": 2205,
+          "comments": 768,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063355055
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063355055
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c17_12_1794062874846",
+          "creatorId": "c17",
+          "creatorHandle": "@camden_clips",
+          "creatorWallet": "GCREATOR17QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
+          "platform": "tiktok",
+          "content": "Client work sneak peek 👀 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 320000,
+            "shares": 1400,
+            "comments": 425,
+            "likes": null
+          },
+          "timestamp": 1794060108612.0264,
+          "url": "https://tiktok.com/camden_clips/status/12"
+        },
+        "vvi": 64895.2,
+        "delta": {
+          "views": 316800,
+          "shares": 1372,
+          "comments": 408,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063355055
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063355055
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c4_4_1794062874846",
+          "creatorId": "c4",
+          "creatorHandle": "@sam_studios",
+          "creatorWallet": "GCREATOR4DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "platform": "x",
+          "content": "Testing new brushes today 🖌️ 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 210000,
+            "shares": 900,
+            "comments": 275,
+            "likes": null
+          },
+          "timestamp": 1794060681013.5037,
+          "url": "https://x.com/sam_studios/status/4"
+        },
+        "vvi": 42567.6,
+        "delta": {
+          "views": 207900,
+          "shares": 882,
+          "comments": 264,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063355055
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063355055
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c13_9_1794062874846",
+          "creatorId": "c13",
+          "creatorHandle": "@quinn_creates",
+          "creatorWallet": "GCREATOR13MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM",
+          "platform": "x",
+          "content": "New color palette exploration 🎨 🔥 VIRAL SPIKE ACTIVATED",
+          "metrics": {
+            "views": 180000,
+            "shares": 750,
+            "comments": 225,
+            "likes": null
+          },
+          "timestamp": 1794061246377.5752,
+          "url": "https://x.com/quinn_creates/status/9"
+        },
+        "vvi": 36461.4,
+        "delta": {
+          "views": 178200,
+          "shares": 735,
+          "comments": 216,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063355055
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063355055
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11_1794063380202",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794061877273.6501,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063380242
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063380242
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8_1794063380202",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794060126222.207,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063380242
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063380242
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5_1794063380202",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794060704197.4194,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "BLOCKED",
+      "amountXlm": "0",
+      "reason": "Guardrails failed",
+      "brandSafe": true,
+      "timestamp": 1794063380242
+    },
+    "status": "blocked",
+    "error": "Guardrails check failed",
+    "timestamp": 1794063380242
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c14_11",
+          "creatorId": "c14",
+          "creatorHandle": "@reese_reels",
+          "creatorWallet": "GCREATOR14NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+          "platform": "tiktok",
+          "content": "POV: You're an artist in 2026 🎭 #artistlife #reels",
+          "metrics": {
+            "views": 10500000,
+            "shares": 315000,
+            "comments": 62300,
+            "likes": null
+          },
+          "timestamp": 1794062803454.6257,
+          "url": "https://tiktok.com/reese_reels/status/11"
+        },
+        "vvi": 2025386.6666666667,
+        "delta": {
+          "views": 10465000,
+          "shares": 312900,
+          "comments": 61410,
+          "minutes": 6
+        }
+      },
+      "sponsor": "FashionBrand",
+      "amountXlm": "5.0",
+      "reason": "Rule-based: VVI 2025386.7 suggests 100% viral velocity. FashionBrand targets tiktok creators.",
+      "brandSafe": true,
+      "timestamp": 1794063574906
+    },
+    "status": "paid",
+    "timestamp": 1794063574906,
+    "txHash": "a48c4e17095a1492bba6048854451451aeaf48b8f53445a0124cb3609bbf91bd",
+    "stellarExpertUrl": "https://stellar.expert/explorer/testnet/tx/a48c4e17095a1492bba6048854451451aeaf48b8f53445a0124cb3609bbf91bd"
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c11_8",
+          "creatorId": "c11",
+          "creatorHandle": "@skyler_social",
+          "creatorWallet": "GCREATOR11KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+          "platform": "tiktok",
+          "content": "You won't believe this productivity hack! 🤯 #learnontiktok",
+          "metrics": {
+            "views": 4400000,
+            "shares": 120000,
+            "comments": 28000,
+            "likes": null
+          },
+          "timestamp": 1794062243848.4229,
+          "url": "https://tiktok.com/skyler_social/status/8"
+        },
+        "vvi": 1256720,
+        "delta": {
+          "views": 4378000,
+          "shares": 118800,
+          "comments": 27440,
+          "minutes": 4
+        }
+      },
+      "sponsor": "BeautyCo",
+      "amountXlm": "5.0",
+      "reason": "Rule-based: VVI 1256720.0 suggests 100% viral velocity. BeautyCo targets tiktok creators.",
+      "brandSafe": true,
+      "timestamp": 1794063598095
+    },
+    "status": "paid",
+    "timestamp": 1794063598095,
+    "txHash": "a8539fbf599204f9bd3348f1f84bb41ab321199a95648c9a41cfa9b41e51f794",
+    "stellarExpertUrl": "https://stellar.expert/explorer/testnet/tx/a8539fbf599204f9bd3348f1f84bb41ab321199a95648c9a41cfa9b41e51f794"
+  },
+  {
+    "decision": {
+      "candidate": {
+        "post": {
+          "id": "post_c5_5",
+          "creatorId": "c5",
+          "creatorHandle": "@taylor_toks",
+          "creatorWallet": "GCREATOR5EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "platform": "tiktok",
+          "content": "This trend is taking over my FYP! 💃 #viral #dance",
+          "metrics": {
+            "views": 2250000,
+            "shares": 71200,
+            "comments": 13600,
+            "likes": null
+          },
+          "timestamp": 1794060935088.9246,
+          "url": "https://tiktok.com/taylor_toks/status/5"
+        },
+        "vvi": 522614,
+        "delta": {
+          "views": 2235000,
+          "shares": 70310,
+          "comments": 13260,
+          "minutes": 5
+        }
+      },
+      "sponsor": "FashionBrand",
+      "amountXlm": "5.0",
+      "reason": "Rule-based: VVI 522614.0 suggests 100% viral velocity. FashionBrand targets tiktok creators.",
+      "brandSafe": true,
+      "timestamp": 1794063623151
+    },
+    "status": "paid",
+    "timestamp": 1794063623151,
+    "txHash": "da28cd311ddd9a8eb090aef9343738b6d8b638f9bdc3885b973cb0d9908ccaca",
+    "stellarExpertUrl": "https://stellar.expert/explorer/testnet/tx/da28cd311ddd9a8eb090aef9343738b6d8b638f9bdc3885b973cb0d9908ccaca"
+  }
+]

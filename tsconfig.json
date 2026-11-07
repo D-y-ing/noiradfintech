@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@agentic-ad-broker/shared": ["packages/shared/src/index.ts"],
+      "@agentic-ad-broker/agent": ["packages/agent/src/index.ts"]
+    }
+  },
+  "include": ["packages/**/*", "apps/**/*", "scripts/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

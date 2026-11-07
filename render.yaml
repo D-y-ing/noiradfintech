@@ -1,0 +1,48 @@
+services:
+  - type: web
+    name: agentic-ad-broker-api
+    runtime: node
+    region: singapore
+    plan: starter
+    buildCommand: npm ci --include=dev
+    startCommand: npx tsx apps/server/src/index.ts
+    healthCheckPath: /api/health
+    disk:
+      name: agentic-ad-broker-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /var/data
+      - key: ENABLE_DEMO_CONTROLS
+        value: "false"
+      - key: PUBLIC_API_URL
+        value: https://agentic-ad-broker-api.onrender.com
+      - key: FRONTEND_URL
+        value: https://agentic-ad-broker.onrender.com
+      - key: DEVICE_HASH
+        sync: false
+      - key: AGENT_SECRET
+        sync: false
+      - key: CREATOR_SECRET
+        sync: false
+      - key: VELO_API_KEY
+        sync: false
+      - key: VELO_WEBHOOK_SECRET
+        sync: false
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_MODEL
+        value: gpt-4o-mini
+
+  - type: web
+    name: agentic-ad-broker
+    runtime: static
+    region: singapore
+    buildCommand: npm ci --include=dev && npm run build --workspace=@agentic-ad-broker/web
+    staticPublishPath: apps/web/dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://agentic-ad-broker-api.onrender.com
