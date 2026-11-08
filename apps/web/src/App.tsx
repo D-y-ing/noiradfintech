@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+﻿import React, { useState, useEffect, useCallback } from 'react';
 import { FeedPanel } from './components/FeedPanel';
 import { DecisionLogPanel } from './components/DecisionLogPanel';
 import { HistoryPanel } from './components/HistoryPanel';
@@ -6,6 +6,7 @@ import { BudgetPanel } from './components/BudgetPanel';
 import { AnalyticsPanel } from './components/AnalyticsPanel';
 import { TopupPanel } from './components/TopupPanel';
 import { CampaignPreviewPanel } from './components/CampaignPreviewPanel';
+import { DemoTransactionJourney } from './components/DemoTransactionJourney';
 import { Header } from './components/Header';
 import './App.css';
 
@@ -256,6 +257,7 @@ function App() {
             <FeedPanel posts={feed} />
 
             <CampaignPreviewPanel apiBase={API_BASE} />
+            <DemoTransactionJourney />
 
             <DecisionLogPanel
               decisions={decisions}
@@ -284,7 +286,7 @@ function App() {
 
       <footer className="footer">
         <p>
-          Agentic Ad Broker â€” Velo x Noir Hackathon 2026 |
+          Agentic Ad Broker Ã¢â‚¬â€ Velo x Noir Hackathon 2026 |
           Simulated social feed | Testnet only
         </p>
       </footer>
@@ -293,4 +295,5 @@ function App() {
 }
 
 export default App;
+
 
