@@ -1,0 +1,74 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Local runtime state (budgets, top-ups, and decision history)
+/data/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test
+coverage/
+.nyc_output/
+
+# Misc
+*.tgz
+.cache/
+
+# Local Claude settings and runtime state
+.claude/settings.local.json
+/apps/data/*.json
+
+# Environment files - keep API keys and secrets private
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Dependencies and build output
+node_modules/
+dist/
+
+# Generated TypeScript outputs
+
+# Generated TypeScript outputs in agent and shared packages
+/packages/agent/src/*.js
+/packages/agent/src/*.js.map
+/packages/agent/src/*.d.ts
+/packages/agent/src/*.d.ts.map
+/packages/shared/src/*.js
+/packages/shared/src/*.js.map
+/packages/shared/src/*.d.ts
+/packages/shared/src/*.d.ts.map
+
+# Local backup source files
+apps/web/src.backup/
