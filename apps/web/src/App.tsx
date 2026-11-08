@@ -8,7 +8,7 @@ import { AnalyticsPanel } from './components/AnalyticsPanel';
 import { Header } from './components/Header';
 import './App.css';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const API_BASE = import.meta.env.VITE_API_URL || '';
 
 interface FeedResponse {
   posts: Array<{

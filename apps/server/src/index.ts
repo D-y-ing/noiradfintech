@@ -48,7 +48,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = parseInt(process.env.PORT || '3001', 10);
-const DATA_DIR = process.env.DATA_DIR || path.resolve(__dirname, '../../data');
+const DATA_DIR = process.env.DATA_DIR || (process.env.VERCEL === '1' ? '/tmp/noiradfintech-data' : path.resolve(__dirname, '../../data'));
 const DECISIONS_FILE = path.join(DATA_DIR, 'decisions.json');
 const BUDGET_FILE = path.join(DATA_DIR, 'budget.json');
 const TOPUP_FILE = path.join(DATA_DIR, 'topups.json');
@@ -552,11 +552,14 @@ app.get('/topup/cancel', (req: Request, res: Response) => {
   `);
 });
 
+if (process.env.VERCEL !== '1') {
 app.listen(PORT, () => {
   console.log(`ðŸš€ Server running on http://localhost:${PORT}`);
   console.log(`ðŸ“¡ Velo webhook URL: ${PUBLIC_API_URL}/api/webhooks/velo`);
   console.log(`ðŸŒ Dashboard API: http://localhost:${PORT}/api/`);
 });
+
+}
 
 // Agent loop: run every 30 seconds
 const AGENT_INTERVAL_MS = 30_000;
@@ -595,6 +598,7 @@ function stopAgentLoop() {
   }
 }
 
+if (process.env.VERCEL !== '1') {
 // Graceful shutdown
 process.on('SIGINT', () => {
   stopAgentLoop();
@@ -608,8 +612,10 @@ process.on('SIGTERM', () => {
   process.exit(0);
 });
 
+}
+
 // Start loop if not in test mode
-if (process.env.NODE_ENV !== 'test') {
+if (process.env.NODE_ENV !== 'test' && process.env.VERCEL !== '1') {
   startAgentLoop();
 }
 
