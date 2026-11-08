@@ -1343,3 +1343,47 @@
 .x-demo-metric strong {
   font-size: 20px;
 }
+
+/* Simulated webhook event demonstration */
+.demo-webhook-panel {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-secondary);
+}
+
+.demo-webhook-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.demo-webhook-heading h3 {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.demo-webhook-notice {
+  padding: 11px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.demo-webhook-footer {
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid var(--success);
+  border-radius: 8px;
+  color: #c6f6d5;
+  background: rgba(74, 222, 128, 0.08);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}

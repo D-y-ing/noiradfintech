@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 
 interface TopupPanelProps {
   apiBase: string;
@@ -14,6 +13,13 @@ interface DemoCheckout {
   status: 'pending' | 'succeeded';
 }
 
+interface DemoWebhook {
+  eventId: string;
+  eventType: string;
+  receivedAt: number;
+  validation: 'passed' | 'failed';
+}
+
 export function TopupPanel({
   apiBase,
   onTopupComplete,
@@ -24,6 +30,7 @@ export function TopupPanel({
   );
   const [loading, setLoading] = useState(false);
   const [checkout, setCheckout] = useState<DemoCheckout | null>(null);
+  const [webhook, setWebhook] = useState<DemoWebhook | null>(null);
   const [error, setError] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -41,6 +48,7 @@ export function TopupPanel({
     }
 
     setError('');
+    setWebhook(null);
 
     setCheckout({
       amount: numericAmount,
@@ -56,6 +64,7 @@ export function TopupPanel({
 
     setLoading(true);
     setError('');
+    setWebhook(null);
 
     try {
       const response = await fetch(`${apiBase}/api/demo/topup`, {
@@ -75,9 +84,20 @@ export function TopupPanel({
         throw new Error(data.error || 'Demo checkout failed.');
       }
 
+      const validDemoResponse =
+        data.simulated === true &&
+        Number(data.amountXlm) === checkout.amount;
+
       setCheckout(current =>
         current ? { ...current, status: 'succeeded' } : current
       );
+
+      setWebhook({
+        eventId: `DEMO-EVT-${Date.now()}`,
+        eventType: 'checkout.demo.completed',
+        receivedAt: Date.now(),
+        validation: validDemoResponse ? 'passed' : 'failed',
+      });
 
       await onTopupComplete();
     } catch (err) {
@@ -253,6 +273,70 @@ export function TopupPanel({
               </>
             )}
           </div>
+
+          {webhook && (
+            <div className="demo-webhook-panel">
+              <div className="demo-webhook-heading">
+                <div>
+                  <span className="topup-step-label">
+                    WEBHOOK EVENT DEMO
+                  </span>
+                  <h3>Webhook Event</h3>
+                </div>
+
+                <span
+                  className={`topup-status ${
+                    webhook.validation === 'passed'
+                      ? 'completed'
+                      : 'pending'
+                  }`}
+                >
+                  {webhook.validation === 'passed'
+                    ? 'Validated'
+                    : 'Validation Failed'}
+                </span>
+              </div>
+
+              <div className="demo-webhook-notice">
+                Simulated event generated after the demo checkout.
+                This is not an actual Velo webhook or signature check.
+              </div>
+
+              <div className="topup-detail-row">
+                <span>Event ID</span>
+                <strong className="topup-reference">
+                  {webhook.eventId}
+                </strong>
+              </div>
+
+              <div className="topup-detail-row">
+                <span>Event Type</span>
+                <strong>{webhook.eventType}</strong>
+              </div>
+
+              <div className="topup-detail-row">
+                <span>Received</span>
+                <strong>
+                  {new Date(webhook.receivedAt).toLocaleString()}
+                </strong>
+              </div>
+
+              <div className="topup-detail-row">
+                <span>Demo Response Check</span>
+                <strong>
+                  {webhook.validation === 'passed'
+                    ? 'Passed'
+                    : 'Failed'}
+                </strong>
+              </div>
+
+              <div className="demo-webhook-footer">
+                {webhook.validation === 'passed'
+                  ? 'The simulated response contained the expected demo status and amount.'
+                  : 'The simulated response did not match the expected demo values.'}
+              </div>
+            </div>
+          )}
         </div>
       )}
     </section>
