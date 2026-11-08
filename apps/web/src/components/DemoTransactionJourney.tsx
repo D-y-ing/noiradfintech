@@ -6,10 +6,20 @@ const stages = [
   'Device Authorization Demo',
   'Brand Safety Verification',
   'Spending Policy Verification',
+  'Escrow Creation Demo',
   'Escrow Reservation Demo',
   'Escrow Verification Demo',
+  'Release Approval Demo',
   'Settlement Status Demo',
   'Webhook Event Demo',
+];
+
+const escrowStages = [
+  'Created',
+  'Reserved',
+  'Verified',
+  'Release Approved',
+  'Completed',
 ];
 
 const PER_DEAL_LIMIT = 5;
@@ -27,6 +37,7 @@ export function DemoTransactionJourney() {
   const [checks, setChecks] = useState<
     { name: string; passed: boolean; detail: string }[]
   >([]);
+  const [escrowStatus, setEscrowStatus] = useState<string[]>([]);
 
   const runDemo = () => {
     const value = Number(amount);
@@ -35,6 +46,7 @@ export function DemoTransactionJourney() {
       setStatus('Please enter a valid demo amount.');
       setHistory([]);
       setChecks([]);
+      setEscrowStatus([]);
       return;
     }
 
@@ -102,21 +114,42 @@ export function DemoTransactionJourney() {
         : 'Demo spending policy: FAILED.',
       ...(approved
         ? [
-            'Demo escrow reservation recorded. No funds moved.',
-            'Demo escrow verification recorded. No contract was called.',
-            'Simulated settlement completed. No payment was sent.',
+            'Demo escrow record created. No contract was called.',
+            'Demo amount marked as reserved. No funds moved.',
+            'Simulated escrow verification: PASSED.',
+            'Simulated release approval recorded. No transfer occurred.',
+            'Demo lifecycle marked as completed. No payment was sent.',
             'Sample webhook event displayed. No cryptographic signature was verified.',
           ]
         : [
-            'Escrow reservation skipped because policy checks failed.',
+            'Escrow creation skipped because policy checks failed.',
+            'Escrow reservation skipped.',
             'Escrow verification skipped.',
+            'Release approval skipped.',
             'Settlement skipped. No payment was sent.',
             'Webhook event skipped.',
           ]),
     ];
 
+    const lifecycle = approved
+      ? [
+          'Demo escrow record created.',
+          `${value} Demo Credits marked as reserved. Not real funds.`,
+          'Simulated verification passed.',
+          'Simulated release approval recorded.',
+          'Demo lifecycle completed. No funds transferred.',
+        ]
+      : [
+          'Not created: policy checks failed.',
+          'Not reserved.',
+          'Not verified.',
+          'Not approved for release.',
+          'Not completed.',
+        ];
+
     setChecks(results);
     setHistory(events);
+    setEscrowStatus(lifecycle);
     setStatus(
       approved
         ? 'DEMO APPROVED — All policy checks passed.'
@@ -133,6 +166,7 @@ export function DemoTransactionJourney() {
     setStatus('Ready');
     setHistory([]);
     setChecks([]);
+    setEscrowStatus([]);
   };
 
   return (
@@ -149,9 +183,10 @@ export function DemoTransactionJourney() {
       </div>
 
       <div className="preview-demo-notice">
-        DEMO ONLY — All device, brand-safety, spending, escrow,
-        and webhook results are simulated. No real payments,
-        wallet authorization, or contract execution occur.
+        DEMO ONLY — All device, policy, escrow, release,
+        settlement, and webhook results are simulated.
+        No real payments, wallet authorization, or contract
+        execution occur.
       </div>
 
       <div className="preview-details">
@@ -238,12 +273,40 @@ export function DemoTransactionJourney() {
               >
                 <div className="preview-card-heading">
                   <strong>{check.name}</strong>
-                  <span>
-                    {check.passed ? 'PASS' : 'FAIL'}
-                  </span>
+                  <span>{check.passed ? 'PASS' : 'FAIL'}</span>
                 </div>
                 <p className="preview-content">
                   {check.detail}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {escrowStatus.length > 0 && (
+        <div style={{ marginTop: 24 }}>
+          <h3>Escrow Lifecycle</h3>
+          <p className="preview-keywords">
+            Simulated escrow record — no actual assets are held or released.
+          </p>
+
+          <div className="campaign-preview-list">
+            {escrowStages.map((item, index) => (
+              <article
+                className="campaign-preview-card"
+                key={item}
+              >
+                <div className="preview-card-heading">
+                  <strong>{index + 1}. {item}</strong>
+                  <span>
+                    {status.startsWith('DEMO APPROVED')
+                      ? 'DEMO'
+                      : 'SKIPPED'}
+                  </span>
+                </div>
+                <p className="preview-content">
+                  {escrowStatus[index]}
                 </p>
               </article>
             ))}
@@ -258,7 +321,8 @@ export function DemoTransactionJourney() {
           {stages.map((item, index) => {
             const event = history[index];
 
-            const failed = event?.includes('REJECTED') ||
+            const failed =
+              event?.includes('REJECTED') ||
               event?.includes('FAILED');
 
             return (
