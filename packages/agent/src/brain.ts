@@ -27,7 +27,7 @@ import {
   toStroops,
   fromStroops,
   simulatedFeed,
-} from '@agentic-ad-broker/shared';
+} from '../../shared/src/index.js';
 import { payCreator, checkPayment, forceOverspend, getEscrowState } from './noir.js';
 
 // =========================

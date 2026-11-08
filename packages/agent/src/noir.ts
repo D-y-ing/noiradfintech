@@ -33,7 +33,7 @@ import {
   MIN_ESCROW_LEFT_XLM,
   toStroops as sharedToStroops,
   fromStroops as sharedFromStroops,
-} from '@agentic-ad-broker/shared';
+} from '../../shared/src/index.js';
 
 // =========================
 // Configuration

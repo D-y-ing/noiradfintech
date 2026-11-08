@@ -9,7 +9,7 @@
   "scripts": {
     "install:all": "npm install",
     "dev": "concurrently -n web,server -c cyan,yellow \"npm run dev --workspace=apps/web\" \"npm run dev --workspace=apps/server\"",
-    "build": "npm run build --workspaces",
+    "build": "npm run build --workspace=@agentic-ad-broker/shared && npm run build --workspace=@agentic-ad-broker/agent && npm run build --workspace=apps/server && npm run build --workspace=apps/web",
     "test": "npm run test --workspaces",
     "setup:testnet": "tsx scripts/setup-testnet.ts",
     "setup:card": "tsx scripts/setup-card.ts"

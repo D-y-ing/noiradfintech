@@ -24,7 +24,7 @@ import {
   restoreGuardrailsState,
   forceOverspend,
   getGuardrailsState,
-} from '@agentic-ad-broker/agent';
+} from '../../../packages/agent/src/index.js';
 import {
   Decision,
   PaymentRecord,
@@ -37,7 +37,7 @@ import {
   toStroops,
   fromStroops,
   simulatedFeed,
-} from '@agentic-ad-broker/shared';
+} from '../../../packages/shared/src/index.js';
 
 // =========================
 // Setup
@@ -60,7 +60,7 @@ if (!fs.existsSync(DATA_DIR)) {
 
 // Velo client
 if (!process.env.VELO_API_KEY) {
-  console.error('âŒ VELO_API_KEY is not set in .env!');
+  console.error('Ã¢ÂÅ’ VELO_API_KEY is not set in .env!');
 }
 const velo = process.env.VELO_API_KEY ? new Velo({
   apiKey: process.env.VELO_API_KEY,
@@ -104,7 +104,7 @@ function loadData(): void {
       }
     }
   } catch (error) {
-    console.warn('âš ï¸  Failed to load data files (will use defaults):', error);
+    console.warn('Ã¢Å¡Â Ã¯Â¸Â  Failed to load data files (will use defaults):', error);
   }
 }
 
@@ -114,7 +114,7 @@ function saveData(): void {
     fs.writeFileSync(BUDGET_FILE, JSON.stringify(budgetState, null, 2));
     fs.writeFileSync(TOPUP_FILE, JSON.stringify(Object.fromEntries(topupSessions), null, 2));
   } catch (error) {
-    console.error('âŒ Failed to save data:', error);
+    console.error('Ã¢ÂÅ’ Failed to save data:', error);
   }
 }
 
@@ -143,7 +143,7 @@ function creditTopupOnce(paymentIntentId: string, amount: string | number): bool
   budgetState.escrowBalanceXlm = (parseFloat(budgetState.escrowBalanceXlm) + creditedAmount).toFixed(7);
   budgetState.lastTopupAt = now;
   saveData();
-  console.log(`âœ… Budget credited: +${creditedAmount} XLM, new balance: ${budgetState.escrowBalanceXlm} XLM`);
+  console.log(`Ã¢Å“â€¦ Budget credited: +${creditedAmount} XLM, new balance: ${budgetState.escrowBalanceXlm} XLM`);
   return true;
 }
 
@@ -427,12 +427,12 @@ app.post('/api/webhooks/velo', async (req: Request, res: Response) => {
   const rawBody = req.body; // Raw buffer from express.raw()
 
   if (!signature || Array.isArray(signature)) {
-    console.warn('âš ï¸  Missing or invalid x-velo-signature header');
+    console.warn('Ã¢Å¡Â Ã¯Â¸Â  Missing or invalid x-velo-signature header');
     return res.status(400).send('Missing signature');
   }
 
   if (!process.env.VELO_WEBHOOK_SECRET) {
-    console.error('âŒ VELO_WEBHOOK_SECRET not configured');
+    console.error('Ã¢ÂÅ’ VELO_WEBHOOK_SECRET not configured');
     return res.status(500).send('Webhook secret not configured');
   }
 
@@ -446,14 +446,14 @@ app.post('/api/webhooks/velo', async (req: Request, res: Response) => {
     });
   } catch (error) {
     if (error instanceof VeloWebhookSignatureVerificationError) {
-      console.warn('âš ï¸  Invalid Velo webhook signature');
+      console.warn('Ã¢Å¡Â Ã¯Â¸Â  Invalid Velo webhook signature');
       return res.status(400).send('Invalid signature');
     }
-    console.error('âŒ Webhook verification error:', error);
+    console.error('Ã¢ÂÅ’ Webhook verification error:', error);
     return res.status(500).send('Verification failed');
   }
 
-  console.log(`ðŸ“¨ Velo webhook: ${event.type} (${event.id})`);
+  console.log(`Ã°Å¸â€œÂ¨ Velo webhook: ${event.type} (${event.id})`);
 
   // Handle payment.succeeded
   if (event.type === 'payment.succeeded') {
@@ -462,7 +462,7 @@ app.post('/api/webhooks/velo', async (req: Request, res: Response) => {
 
     // Deduplicate by event.id
     const credited = creditTopupOnce(paymentIntentId, amount);
-    if (!credited) console.log(`â„¹ï¸ Top-up ${paymentIntentId} was already credited or its session is unavailable.`);
+    if (!credited) console.log(`Ã¢â€žÂ¹Ã¯Â¸Â Top-up ${paymentIntentId} was already credited or its session is unavailable.`);
     return res.json({ received: true, credited });
   }
 
@@ -482,9 +482,9 @@ app.get('/topup/success', (req: Request, res: Response) => {
     <html>
       <head><title>Top-up Success</title></head>
       <body style="font-family:system-ui,sans-serif;max-width:600px;margin:80px auto;text-align:center">
-        <h1>âœ… Top-up Successful</h1>
-        <p>Weâ€™re confirming your paymentâ€¦</p>
-        <div id="status">Checking budgetâ€¦</div>
+        <h1>Ã¢Å“â€¦ Top-up Successful</h1>
+        <p>WeÃ¢â‚¬â„¢re confirming your paymentÃ¢â‚¬Â¦</p>
+        <div id="status">Checking budgetÃ¢â‚¬Â¦</div>
         <script>
           let attempts = 0;
           async function check() {
@@ -493,7 +493,7 @@ app.get('/topup/success', (req: Request, res: Response) => {
               const j = await r.json();
               const bal = j.budget?.escrowBalanceXlm ?? 'unknown';
               const lastTopup = j.budget?.lastTopupAt ? new Date(j.budget.lastTopupAt).toLocaleString() : 'just now';
-              document.getElementById('status').innerHTML = '<p>Your campaign budget is now <b>' + bal + ' XLM</b>.</p><p>Last top-up: ' + lastTopup + '</p><p><a href="${returnUrl}" style="display:inline-block;padding:12px 24px;background:#4f46e5;color:white;text-decoration:none;border-radius:8px;margin-top:16px">Return to App â†’</a></p>';
+              document.getElementById('status').innerHTML = '<p>Your campaign budget is now <b>' + bal + ' XLM</b>.</p><p>Last top-up: ' + lastTopup + '</p><p><a href="${returnUrl}" style="display:inline-block;padding:12px 24px;background:#4f46e5;color:white;text-decoration:none;border-radius:8px;margin-top:16px">Return to App Ã¢â€ â€™</a></p>';
               clearInterval(interval);
             } catch(e){
               attempts++;
@@ -522,10 +522,10 @@ app.get('/topup/success/:sessionId', (req: Request, res: Response) => {
     <html>
       <head><title>Top-up Success</title></head>
       <body style="font-family:system-ui,sans-serif;max-width:600px;margin:80px auto;text-align:center">
-        <h1>âœ… Top-up Successful</h1>
+        <h1>Ã¢Å“â€¦ Top-up Successful</h1>
         <p>Your campaign budget has been topped up.</p>
         <p>Session: ${sessionId}</p>
-        <p><a href="${returnUrl}" style="display:inline-block;padding:12px 24px;background:#4f46e5;color:white;text-decoration:none;border-radius:8px;margin-top:16px">Return to App â†’</a></p>
+        <p><a href="${returnUrl}" style="display:inline-block;padding:12px 24px;background:#4f46e5;color:white;text-decoration:none;border-radius:8px;margin-top:16px">Return to App Ã¢â€ â€™</a></p>
         <script>
           setTimeout(() => { window.location.href = '${returnUrl}'; }, 3000);
         </script>
@@ -541,9 +541,9 @@ app.get('/topup/cancel', (req: Request, res: Response) => {
     <html>
       <head><title>Top-up Cancelled</title></head>
       <body style="font-family:system-ui,sans-serif;max-width:600px;margin:80px auto;text-align:center">
-        <h1>âŒ Top-up Cancelled</h1>
+        <h1>Ã¢ÂÅ’ Top-up Cancelled</h1>
         <p>The payment was cancelled or could not be completed.</p>
-        <p><a href="${returnUrl}" style="display:inline-block;padding:12px 24px;background:#6b7280;color:white;text-decoration:none;border-radius:8px;margin-top:16px">Return to App â†’</a></p>
+        <p><a href="${returnUrl}" style="display:inline-block;padding:12px 24px;background:#6b7280;color:white;text-decoration:none;border-radius:8px;margin-top:16px">Return to App Ã¢â€ â€™</a></p>
         <script>
           setTimeout(() => { window.location.href = '${returnUrl}'; }, 3000);
         </script>
@@ -554,9 +554,9 @@ app.get('/topup/cancel', (req: Request, res: Response) => {
 
 if (process.env.VERCEL !== '1') {
 app.listen(PORT, () => {
-  console.log(`ðŸš€ Server running on http://localhost:${PORT}`);
-  console.log(`ðŸ“¡ Velo webhook URL: ${PUBLIC_API_URL}/api/webhooks/velo`);
-  console.log(`ðŸŒ Dashboard API: http://localhost:${PORT}/api/`);
+  console.log(`Ã°Å¸Å¡â‚¬ Server running on http://localhost:${PORT}`);
+  console.log(`Ã°Å¸â€œÂ¡ Velo webhook URL: ${PUBLIC_API_URL}/api/webhooks/velo`);
+  console.log(`Ã°Å¸Å’Â Dashboard API: http://localhost:${PORT}/api/`);
 });
 
 }
@@ -566,25 +566,25 @@ const AGENT_INTERVAL_MS = 30_000;
 let agentLoopTimer: NodeJS.Timeout | null = null;
 
 async function runAgentLoop() {
-  console.log('\nðŸ¤– Agent cycle starting...');
+  console.log('\nÃ°Å¸Â¤â€“ Agent cycle starting...');
   try {
     const results = await runAndRecordAgentCycle();
     if (results.length > 0) {
-      console.log(`ðŸ¤– Agent cycle complete: ${results.length} decision(s)`);
+      console.log(`Ã°Å¸Â¤â€“ Agent cycle complete: ${results.length} decision(s)`);
       for (const r of results) {
-        console.log(`   ${r.status.toUpperCase()}: ${r.decision.sponsor} â†’ ${r.decision.amountXlm} XLM (${r.decision.reason.slice(0, 60)}...)`);
+        console.log(`   ${r.status.toUpperCase()}: ${r.decision.sponsor} Ã¢â€ â€™ ${r.decision.amountXlm} XLM (${r.decision.reason.slice(0, 60)}...)`);
       }
     } else {
-      console.log('ðŸ¤– Agent cycle complete: no flagged candidates');
+      console.log('Ã°Å¸Â¤â€“ Agent cycle complete: no flagged candidates');
     }
   } catch (error) {
-    console.error('ðŸ¤– Agent cycle error:', error);
+    console.error('Ã°Å¸Â¤â€“ Agent cycle error:', error);
   }
 }
 
 function startAgentLoop() {
   if (agentLoopTimer) return;
-  console.log(`â° Starting agent loop (every ${AGENT_INTERVAL_MS / 1000}s)`);
+  console.log(`Ã¢ÂÂ° Starting agent loop (every ${AGENT_INTERVAL_MS / 1000}s)`);
   agentLoopTimer = setInterval(runAgentLoop, AGENT_INTERVAL_MS);
   // Run once immediately
   runAgentLoop();
@@ -594,7 +594,7 @@ function stopAgentLoop() {
   if (agentLoopTimer) {
     clearInterval(agentLoopTimer);
     agentLoopTimer = null;
-    console.log('â¹ï¸  Agent loop stopped');
+    console.log('Ã¢ÂÂ¹Ã¯Â¸Â  Agent loop stopped');
   }
 }
 
