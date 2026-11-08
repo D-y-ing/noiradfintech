@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { FeedPanel } from './components/FeedPanel';
 import { DecisionLogPanel } from './components/DecisionLogPanel';
@@ -72,9 +71,16 @@ interface BudgetResponse {
   };
 }
 
+interface TopupHistoryRecord {
+  amountXlm: string;
+  status: string;
+  createdAt: number;
+}
+
 function App() {
   const [feed, setFeed] = useState<FeedResponse['posts']>([]);
   const [decisions, setDecisions] = useState<DecisionsResponse['decisions']>([]);
+  const [topupHistory, setTopupHistory] = useState<TopupHistoryRecord[]>([]);
   const [budget, setBudget] = useState<BudgetResponse['budget'] | null>(null);
   const [guardrails, setGuardrails] = useState<BudgetResponse['guardrails'] | null>(null);
   const [loading, setLoading] = useState(true);
@@ -96,10 +102,11 @@ function App() {
     try {
       setError(null);
 
-      const [feedRes, decisionsRes, budgetRes] = await Promise.allSettled([
+      const [feedRes, decisionsRes, budgetRes, topupRes] = await Promise.allSettled([
         fetchJson(`${API_BASE}/api/feed`),
         fetchJson(`${API_BASE}/api/decisions`),
         fetchJson(`${API_BASE}/api/budget`),
+        fetchJson('/topup-history.json'),
       ]);
 
       if (feedRes.status === 'fulfilled') {
@@ -113,6 +120,12 @@ function App() {
       if (budgetRes.status === 'fulfilled') {
         setBudget(budgetRes.value.budget || null);
         setGuardrails(budgetRes.value.guardrails || null);
+      }
+
+      if (topupRes.status === 'fulfilled' && Array.isArray(topupRes.value)) {
+        setTopupHistory(topupRes.value);
+      } else if (topupRes.status === 'rejected') {
+        console.error('Could not load historical top-ups:', topupRes.reason);
       }
 
       setLastUpdate(new Date());
@@ -177,7 +190,7 @@ function App() {
 
         const reason =
           candidateCount === 0 && flaggedCount === 0
-            ? 'No posts currently meet VVI ≥ 50. The agent will keep monitoring the feed.'
+            ? 'No posts currently meet VVI >= 50. The agent will keep monitoring the feed.'
             : candidateCount === 0
               ? `All ${flaggedCount} flagged post(s) have already been handled. The agent will pick up new candidates automatically.`
               : `${candidateCount} eligible flagged post(s) remain, but this scan returned no new decisions. The agent will retry automatically.`;
@@ -250,7 +263,10 @@ function App() {
             decisions={decisions}
           />
         ) : (
-          <HistoryPanel decisions={decisions} />
+          <HistoryPanel
+            decisions={decisions}
+            topupHistory={topupHistory}
+          />
         )}
       </main>
 
