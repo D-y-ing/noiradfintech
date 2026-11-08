@@ -339,6 +339,39 @@ app.post('/api/feed/spike', async (req: Request, res: Response) => {
 });
 
 // =========================
+// Demo-only top-up. No payment provider or blockchain transaction is used.
+app.post('/api/demo/topup', (req: Request, res: Response) => {
+  try {
+    const amount = Number(req.body?.amountXlm);
+
+    if (!Number.isFinite(amount) || amount < 0.1 || amount > 100) {
+      return res.status(400).json({
+        error: 'Amount must be between 0.1 and 100 simulated XLM.',
+      });
+    }
+
+    budgetState.escrowBalanceXlm = (
+      Number(budgetState.escrowBalanceXlm) + amount
+    ).toFixed(7);
+
+    budgetState.lastTopupAt = Date.now();
+
+    saveData();
+
+    return res.json({
+      success: true,
+      simulated: true,
+      amountXlm: amount.toFixed(7),
+      budget: budgetState,
+      message: 'Demo funds added. No real payment was made.',
+    });
+  } catch (error) {
+    console.error('Demo top-up error:', error);
+    return res.status(500).json({
+      error: 'Could not add simulated demo funds.',
+    });
+  }
+});
 // Velo: Create Checkout Session (Brand tops up campaign budget)
 // =========================
 

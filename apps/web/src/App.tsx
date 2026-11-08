@@ -5,6 +5,7 @@ import { DecisionLogPanel } from './components/DecisionLogPanel';
 import { HistoryPanel } from './components/HistoryPanel';
 import { BudgetPanel } from './components/BudgetPanel';
 import { AnalyticsPanel } from './components/AnalyticsPanel';
+import { TopupPanel } from './components/TopupPanel';
 import { Header } from './components/Header';
 import './App.css';
 
@@ -241,25 +242,7 @@ function App() {
               guardrails={guardrails}
             />
 
-            <section className="panel topup-panel">
-              <div className="panel-header">
-                <div className="panel-title">
-                  <span className="panel-title-text">Velo Top-Up</span>
-                </div>
-
-                <span className="panel-subtitle">Demo Mode</span>
-              </div>
-
-              <p
-                style={{
-                  color: 'var(--text-muted)',
-                  fontSize: '0.85rem',
-                }}
-              >
-                Payment functionality is disabled in this public demo.
-                The dashboard uses simulated campaign budget data.
-              </p>
-            </section>
+            <TopupPanel apiBase={API_BASE} onTopupComplete={fetchAll} />
           </>
         ) : activeTab === 'analytics' ? (
           <AnalyticsPanel

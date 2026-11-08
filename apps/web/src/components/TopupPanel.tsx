@@ -13,71 +13,53 @@ export function TopupPanel({ apiBase, onTopupComplete }: TopupPanelProps) {
     visible: boolean;
     success: boolean;
     message: string;
-    checkoutUrl?: string;
-    paymentIntentId?: string;
   }>({ visible: false, success: false, message: '' });
-
-  const waitForPayment = async (paymentIntentId: string) => {
-    for (let attempt = 0; attempt < 90; attempt += 1) {
-      await new Promise(resolve => window.setTimeout(resolve, 2000));
-      try {
-        const response = await fetch(`${apiBase}/api/topup/${encodeURIComponent(paymentIntentId)}`);
-        if (!response.ok) continue;
-        const payment = await response.json();
-        if (payment.status === 'succeeded' || payment.session?.status === 'succeeded') {
-          await onTopupComplete();
-          setResult(current => current.paymentIntentId === paymentIntentId
-            ? { ...current, message: 'Payment confirmed. Budget and guardrails are updated.' }
-            : current);
-          return;
-        }
-        if (payment.status === 'failed' || payment.status === 'cancelled') {
-          setResult(current => current.paymentIntentId === paymentIntentId
-            ? { ...current, success: false, message: `Payment ${payment.status}. The budget was not changed.` }
-            : current);
-          return;
-        }
-      } catch {
-        // Keep polling through temporary network or provider errors.
-      }
-    }
-    setResult(current => current.paymentIntentId === paymentIntentId
-      ? { ...current, message: 'Still waiting for payment confirmation. The dashboard will refresh when Velo confirms it.' }
-      : current);
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const numericAmount = Number(amount);
+
+    if (!Number.isFinite(numericAmount) || numericAmount < 0.1 || numericAmount > 100) {
+      setResult({
+        visible: true,
+        success: false,
+        message: 'Enter an amount between 0.1 and 100 XLM.',
+      });
+      return;
+    }
+
     setLoading(true);
     setResult({ visible: false, success: false, message: '' });
 
     try {
-      const res = await fetch(`${apiBase}/api/topup`, {
+      const response = await fetch(`${apiBase}/api/demo/topup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ amountXlm: amount, description }),
+        body: JSON.stringify({
+          amountXlm: numericAmount,
+          description: description.slice(0, 100),
+        }),
       });
 
-      const data = await res.json();
+      const data = await response.json();
 
-      if (!res.ok) {
-        throw new Error(data.error || 'Failed to create checkout');
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to add demo funds.');
       }
 
       setResult({
         visible: true,
         success: true,
-        message: 'Checkout is ready. Complete payment and the budget will update automatically.',
-        checkoutUrl: data.checkoutUrl,
-        paymentIntentId: data.paymentIntentId,
+        message: `Added ${data.amountXlm} simulated XLM to the campaign budget. No real payment was made.`,
       });
 
-      void waitForPayment(data.paymentIntentId);
+      await onTopupComplete();
     } catch (error) {
       setResult({
         visible: true,
         success: false,
-        message: error instanceof Error ? error.message : 'Unknown error',
+        message: error instanceof Error ? error.message : 'Something went wrong.',
       });
     } finally {
       setLoading(false);
@@ -88,22 +70,33 @@ export function TopupPanel({ apiBase, onTopupComplete }: TopupPanelProps) {
     <section className="panel topup-panel">
       <div className="panel-header">
         <div className="panel-title">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="20 6 9 17 4 12" />
-          </svg>
           <span className="panel-title-text">Velo Top-Up</span>
         </div>
-        <span className="panel-subtitle">Brand funds campaign budget</span>
+        <span className="panel-subtitle">Demo Mode</span>
       </div>
-      <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '12px', padding: '8px', background: 'var(--bg-elevated)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)' }}>
-        💡 Escrow has 100 XLM initial balance for demo. Use Top-Up for simulating brand funding in production.
+
+      <div
+        style={{
+          fontSize: '0.75rem',
+          color: 'var(--text-muted)',
+          marginBottom: '12px',
+          padding: '8px',
+          background: 'var(--bg-elevated)',
+          borderRadius: 'var(--radius-sm)',
+          border: '1px solid var(--border)',
+        }}
+      >
+        Demo only: this adds simulated XLM to the dashboard balance.
+        No Velo checkout, real money, or blockchain transaction is used.
       </div>
 
       <form onSubmit={handleSubmit} className="topup-form">
         <div className="form-group">
-          <label className="form-label" htmlFor="amount">Amount (XLM)</label>
+          <label className="form-label" htmlFor="demo-amount">
+            Amount (XLM)
+          </label>
           <input
-            id="amount"
+            id="demo-amount"
             type="number"
             step="0.1"
             min="0.1"
@@ -111,55 +104,42 @@ export function TopupPanel({ apiBase, onTopupComplete }: TopupPanelProps) {
             className="form-input"
             value={amount}
             onChange={e => setAmount(e.target.value)}
-            placeholder="10.0"
             disabled={loading}
+            required
           />
         </div>
+
         <div className="form-group">
-          <label className="form-label" htmlFor="description">Description</label>
+          <label className="form-label" htmlFor="demo-description">
+            Description
+          </label>
           <input
-            id="description"
+            id="demo-description"
             type="text"
             className="form-input"
             value={description}
             onChange={e => setDescription(e.target.value)}
-            placeholder="Campaign budget top-up"
+            maxLength={100}
             disabled={loading}
           />
         </div>
-        <button type="submit" className="btn btn-primary" disabled={loading} style={{ width: '100%' }}>
-          {loading ? 'Creating...' : 'Create Checkout Session'}
+
+        <button
+          type="submit"
+          className="btn btn-primary"
+          disabled={loading}
+          style={{ width: '100%' }}
+        >
+          {loading ? 'Adding demo funds...' : 'Add Demo Funds'}
         </button>
       </form>
 
       {result.visible && (
         <div className={`topup-result visible ${result.success ? 'success' : 'error'}`}>
           <div style={{ fontWeight: 600, marginBottom: '8px' }}>
-            {result.success ? '✅ Success' : '❌ Error'}
+            {result.success ? 'Success' : 'Unable to add funds'}
           </div>
-          <div>{result.message}</div>
-          {result.success && result.checkoutUrl && result.paymentIntentId && (
-            <div style={{ marginTop: '12px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <a
-                href={result.checkoutUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="topup-link"
-                style={{ textAlign: 'center', padding: '10px', background: 'var(--bg)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--accent)' }}
-              >
-                🔗 Open Velo Checkout →
-              </a>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textAlign: 'center' }}>
-                After payment, click "Return to Merchant" or you'll be redirected back automatically
-              </div>
-              <div style={{ fontSize: '0.625rem', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)', wordBreak: 'break-all' }}>
-                Payment Intent: {result.paymentIntentId}
-              </div>
-              <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                After payment completes, the signed webhook will credit the budget automatically.
-              </p>
-            </div>
-          )}
+          <p>{result.message}</p>
         </div>
       )}
     </section>
