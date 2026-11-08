@@ -166,7 +166,16 @@ function App() {
         method: 'POST',
       });
 
-      const data = await res.json();
+      const responseText = await res.text();
+      let data: any;
+
+      try {
+        data = responseText ? JSON.parse(responseText) : {};
+      } catch {
+        throw new Error(
+          `Agent endpoint returned a non-JSON response (${res.status}). ${responseText.slice(0, 180)}`
+        );
+      }
 
       if (!res.ok) {
         throw new Error(data.error || `Agent request failed (${res.status})`);
@@ -188,7 +197,7 @@ function App() {
 
         const flaggedCount = Number(feedData.candidates || 0);
 
-        const reason =
+        const reason = data.message ||
           candidateCount === 0 && flaggedCount === 0
             ? 'No posts currently meet VVI >= 50. The agent will keep monitoring the feed.'
             : candidateCount === 0
@@ -272,7 +281,7 @@ function App() {
 
       <footer className="footer">
         <p>
-          Agentic Ad Broker — Velo x Noir Hackathon 2026 |
+          Agentic Ad Broker â€” Velo x Noir Hackathon 2026 |
           Simulated social feed | Testnet only
         </p>
       </footer>
