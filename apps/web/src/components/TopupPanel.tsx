@@ -76,17 +76,13 @@ export function TopupPanel({
       }
 
       setCheckout(current =>
-        current
-          ? { ...current, status: 'succeeded' }
-          : current
+        current ? { ...current, status: 'succeeded' } : current
       );
 
       await onTopupComplete();
     } catch (err) {
       setError(
-        err instanceof Error
-          ? err.message
-          : 'Something went wrong.'
+        err instanceof Error ? err.message : 'Something went wrong.'
       );
     } finally {
       setLoading(false);
@@ -117,20 +113,12 @@ export function TopupPanel({
         </span>
       </div>
 
-      <div
-        style={{
-          fontSize: '0.75rem',
-          color: 'var(--text-muted)',
-          marginBottom: '12px',
-          padding: '8px',
-          background: 'var(--bg-elevated)',
-          borderRadius: 'var(--radius-sm)',
-          border: '1px solid var(--border)',
-        }}
-      >
-        Demo checkout: create a transaction and confirm it using
-        simulated funds. No Velo checkout, real payment, or
-        blockchain transaction is used.
+      <div className="topup-demo-notice">
+        <strong>Demo checkout</strong>
+        <p>
+          Create a checkout session, review your transaction, and
+          confirm using simulated funds. No real payment is processed.
+        </p>
       </div>
 
       <form onSubmit={handleSubmit} className="topup-form">
@@ -189,85 +177,81 @@ export function TopupPanel({
       )}
 
       {checkout && (
-        <div className="topup-result visible success">
-          <div style={{ fontWeight: 600, marginBottom: '8px' }}>
-            {checkout.status === 'succeeded'
-              ? '✅ Demo Checkout Complete'
-              : '✅ Checkout is Ready'}
+        <div className="topup-checkout">
+          <div className="topup-checkout-header">
+            <div>
+              <span className="topup-step-label">CHECKOUT SESSION</span>
+              <h3>Transaction Details</h3>
+            </div>
+
+            <span
+              className={`topup-status ${
+                checkout.status === 'succeeded'
+                  ? 'completed'
+                  : 'pending'
+              }`}
+            >
+              {checkout.status === 'succeeded'
+                ? 'Completed'
+                : 'Pending'}
+            </span>
           </div>
 
-          <p>
-            {checkout.status === 'succeeded'
-              ? 'Simulated funds were added to the campaign budget.'
-              : 'Review your transaction details and confirm the demo checkout.'}
-          </p>
+          <div className="topup-amount-display">
+            <span>Amount to top up</span>
+            <strong>{checkout.amount.toFixed(1)} XLM</strong>
+          </div>
 
-          <div
-            style={{
-              marginTop: '12px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '10px',
-            }}
-          >
-            <div>
-              <strong>Transaction Details</strong>
-            </div>
+          <div className="topup-detail-row">
+            <span>Description</span>
+            <strong>{checkout.description}</strong>
+          </div>
 
-            <div>
-              <span>Amount: </span>
-              <strong>{checkout.amount.toFixed(1)} XLM</strong>
-            </div>
+          <div className="topup-detail-row">
+            <span>Transaction Reference</span>
+            <strong className="topup-reference">
+              {checkout.reference}
+            </strong>
+          </div>
 
-            <div>
-              <span>Description: </span>
-              <strong>{checkout.description}</strong>
-            </div>
+          <div className="topup-detail-row">
+            <span>Created</span>
+            <strong>
+              {new Date(checkout.createdAt).toLocaleString()}
+            </strong>
+          </div>
 
-            <div>
-              <span>Transaction Reference: </span>
-              <div
-                style={{
-                  fontSize: '0.7rem',
-                  fontFamily: 'var(--font-mono)',
-                  wordBreak: 'break-all',
-                }}
-              >
-                {checkout.reference}
+          <div className="topup-detail-row">
+            <span>Payment Status</span>
+            <strong>
+              {checkout.status === 'succeeded'
+                ? 'Demo payment completed'
+                : 'Awaiting confirmation'}
+            </strong>
+          </div>
+
+          <div className="topup-payment-area">
+            {checkout.status === 'succeeded' ? (
+              <div className="topup-complete-message">
+                Demo checkout completed successfully.
               </div>
-            </div>
+            ) : (
+              <>
+                <p>
+                  Review the transaction details before continuing.
+                </p>
 
-            <div>
-              <span>Status: </span>
-              <strong>
-                {checkout.status === 'succeeded'
-                  ? 'Demo payment completed'
-                  : 'Awaiting demo confirmation'}
-              </strong>
-            </div>
-
-            <div
-              style={{
-                fontSize: '0.7rem',
-                color: 'var(--text-muted)',
-              }}
-            >
-              Created: {new Date(checkout.createdAt).toLocaleString()}
-            </div>
-
-            <button
-              type="button"
-              className="btn btn-primary"
-              disabled={loading || checkout.status === 'succeeded'}
-              onClick={handleDemoPay}
-              style={{ width: '100%' }}
-            >
-              {loading
-                ? 'Processing demo...'
-                : checkout.status === 'succeeded'
-                  ? 'Demo Payment Completed'
-                  : 'Pay (Demo)'}
-            </button>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  disabled={loading}
+                  onClick={handleDemoPay}
+                  style={{ width: '100%' }}
+                >
+                  {loading ? 'Processing demo...' : 'Pay (Demo)'}
+                </button>
+              </>
+            )}
           </div>
         </div>
       )}
