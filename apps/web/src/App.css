@@ -1274,3 +1274,72 @@
 .feed-source-tag {
   background: rgba(59, 130, 246, 0.07);
 }
+
+/* X Integration Demo */
+.x-integration-demo {
+  margin: 12px 0 18px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(59, 130, 246, 0.04);
+}
+
+.x-demo-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.x-demo-heading h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.x-demo-heading p {
+  margin: 5px 0 0;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.x-demo-status {
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.x-demo-api-notice {
+  margin: 14px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(245, 158, 11, 0.08);
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.x-demo-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
+}
+
+.x-demo-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+}
+
+.x-demo-metric span {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.x-demo-metric strong {
+  font-size: 20px;
+}

@@ -52,6 +52,12 @@ export function FeedPanel({ posts }: FeedPanelProps) {
     return b.vvi - a.vvi;
   });
 
+  const xPosts = sortedPosts.filter(post => post.platform === 'x');
+  const xViews = xPosts.reduce((sum, post) => sum + post.metrics.views, 0);
+  const xShares = xPosts.reduce((sum, post) => sum + post.metrics.shares, 0);
+  const xComments = xPosts.reduce((sum, post) => sum + post.metrics.comments, 0);
+  const xFlagged = xPosts.filter(post => post.flagged).length;
+
   return (
     <section className="panel feed-panel">
       <div className="panel-header">
@@ -74,6 +80,43 @@ export function FeedPanel({ posts }: FeedPanelProps) {
         <span>TikTok: {posts.filter(p => p.platform === 'tiktok').length} posts</span>
         <span>Instagram: {posts.filter(p => p.platform === 'instagram').length} posts</span>
       </div>
+      <section className="x-integration-demo">
+        <div className="x-demo-heading">
+          <div>
+            <h3>X Integration Demo</h3>
+            <p>Sample X feed analytics and viral-content detection</p>
+          </div>
+          <span className="x-demo-status">DEMO MODE</span>
+        </div>
+
+        <div className="x-demo-api-notice">
+          API STATUS: NOT CONNECTED — Metrics below use simulated sample data.
+        </div>
+
+        <div className="x-demo-metrics">
+          <div className="x-demo-metric">
+            <span>X Posts Detected</span>
+            <strong>{xPosts.length}</strong>
+          </div>
+          <div className="x-demo-metric">
+            <span>Total Views</span>
+            <strong>{formatNumber(xViews)}</strong>
+          </div>
+          <div className="x-demo-metric">
+            <span>Total Shares</span>
+            <strong>{formatNumber(xShares)}</strong>
+          </div>
+          <div className="x-demo-metric">
+            <span>Total Comments</span>
+            <strong>{formatNumber(xComments)}</strong>
+          </div>
+          <div className="x-demo-metric">
+            <span>VVI Flagged</span>
+            <strong>{xFlagged}</strong>
+          </div>
+        </div>
+      </section>
+
       <div className="feed-list">
         {sortedPosts.length === 0 ? (
           <div style={{ padding: '40px 20px', textAlign: 'center', color: 'var(--text-muted)' }}>
@@ -123,3 +166,4 @@ export function FeedPanel({ posts }: FeedPanelProps) {
     </section>
   );
 }
+
