@@ -5,7 +5,7 @@
 **Live website:** https://agentic-ad-broker.vercel.app
 **Demo video (2 min):** https://youtu.be/demo-video-link
 **Pitch deck:** https://docs.google.com/presentation/d/demo-deck
-**Team:** John Raven (Discord: @johnraven), Jane Doe (Discord: @janedoe)
+**Team:** Gabrielle Dy (Discord: NonTheWiser) John Raven (Discord: @johnraven), Jane Doe (Discord: @janedoe)
 
 ---
 
