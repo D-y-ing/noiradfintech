@@ -191,66 +191,61 @@ export class SimulatedFeed implements SocialSource {
     });
   }
 
-  async getFeed(): Promise<Post[]> {
-    // Return posts sorted by VVI descending (viral first)
-    const postsWithVVI = this.posts.map(post => {
-      // Find the scripted post to get delta
-      const scripted = SCRIPTED_POSTS.find((_, i) =>
-        this.posts[i]?.id === post.id
-      );
-      // Simplified: just compute from current metrics vs a simulated "previous"
-      // In real implementation, you'd track historical metrics
-      const creator = CREATORS.find(c => c.id === post.creatorId);
-      const baseViews = Math.floor(post.metrics.views * 0.7);
-      const baseShares = Math.floor(post.metrics.shares * 0.3);
-      const baseComments = Math.floor(post.metrics.comments * 0.4);
-      const delta: PostDelta = {
-        views: post.metrics.views - baseViews,
-        shares: post.metrics.shares - baseShares,
-        comments: post.metrics.comments - baseComments,
-        minutes: 5, // Assume 5-minute window for viral detection
-      };
-      return { post, vvi: computeVVI(delta), delta };
-    });
+  /**
+   * Calculates VVI for every post using simulated engagement data.
+   */
+  getFeedWithVVI(): Array<Post & {
+    vvi: number;
+    delta: PostDelta;
+    flagged: boolean;
+  }> {
+    return this.posts
+      .map((post, index) => {
+        const scripted = SCRIPTED_POSTS[index];
+        let delta: PostDelta;
 
-    postsWithVVI.sort((a, b) => b.vvi - a.vvi);
-    return postsWithVVI.map(p => p.post);
-  }
+        if (scripted?.spikeMultiplier) {
+          delta = computeDelta(
+            scripted.baseMetrics,
+            post.metrics,
+            scripted.spikeMultiplier.durationMinutes
+          );
+        } else {
+          delta = {
+            views: Math.floor(post.metrics.views * 0.02),
+            shares: Math.floor(post.metrics.shares * 0.05),
+            comments: Math.floor(post.metrics.comments * 0.03),
+            minutes: 30,
+          };
+        }
 
-  getCandidates(): Candidate[] {
-    const postsWithVVI = this.posts.map((post, index) => {
-      const scripted = SCRIPTED_POSTS[index];
-      const creator = CREATORS[scripted.creatorIndex];
-      const isSpike = !!scripted.spikeMultiplier;
-      const spikedMetrics = isSpike ? applySpike(scripted.baseMetrics, scripted.spikeMultiplier!) : scripted.baseMetrics;
+        const vvi = computeVVI(delta);
 
-      let delta: PostDelta;
-      if (isSpike && scripted.spikeMultiplier) {
-        delta = computeDelta(scripted.baseMetrics, spikedMetrics, scripted.spikeMultiplier.durationMinutes);
-      } else {
-        delta = {
-          views: Math.floor(spikedMetrics.views * 0.02),
-          shares: Math.floor(spikedMetrics.shares * 0.05),
-          comments: Math.floor(spikedMetrics.comments * 0.03),
-          minutes: 30,
+        return {
+          ...post,
+          vvi,
+          delta,
+          flagged: vvi >= VVI_THRESHOLD,
         };
-      }
-
-      const vvi = computeVVI(delta);
-
-      return {
-        post,
-        vvi,
-        delta,
-      };
-    });
-
-    // Filter to only flagged candidates (VVI > threshold)
-    return postsWithVVI
-      .filter(c => c.vvi >= VVI_THRESHOLD)
+      })
       .sort((a, b) => b.vvi - a.vvi);
   }
 
+  async getFeed(): Promise<Post[]> {
+    return this.getFeedWithVVI().map(
+      ({ vvi, delta, flagged, ...post }) => post
+    );
+  }
+
+  getCandidates(): Candidate[] {
+    return this.getFeedWithVVI()
+      .filter(post => post.flagged)
+      .map(({ vvi, delta, flagged, ...post }) => ({
+        post,
+        vvi,
+        delta,
+      }));
+  }
   getCreator(id: string): Creator | undefined {
     return CREATORS.find(c => c.id === id);
   }

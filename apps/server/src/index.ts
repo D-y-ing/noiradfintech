@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Agentic Ad Broker - Server
  *
  * Express API server with:
@@ -230,24 +230,20 @@ app.get('/api/health', (_req: Request, res: Response) => {
 // Get live feed with VVI
 app.get('/api/feed', async (_req: Request, res: Response) => {
   try {
-    const posts = simulatedFeed.getAllPosts();
-    const candidates = simulatedFeed.getCandidates();
+    const postsWithVVI = simulatedFeed.getFeedWithVVI();
+    const candidates = postsWithVVI.filter(post => post.flagged);
     const guardrails = getGuardrailsState();
 
-    // Add VVI to each post
-    const postsWithVVI = posts.map(post => {
-      const candidate = candidates.find(c => c.post.id === post.id);
-      return {
-        ...post,
-        vvi: candidate?.vvi || 0,
-        flagged: !!candidate,
-      };
-    });
+    const eligibleCandidates = candidates.filter(
+      candidate => !guardrails.paidPostIds.has(candidate.id)
+    );
 
     res.json({
       posts: postsWithVVI,
       candidates: candidates.length,
-      eligibleCandidates: candidates.filter(candidate => !guardrails.paidPostIds.has(candidate.post.id)).length,
+      eligibleCandidates: eligibleCandidates.length,
+      vviThreshold: 50,
+      simulated: true,
     });
   } catch (error) {
     console.error('Feed error:', error);
