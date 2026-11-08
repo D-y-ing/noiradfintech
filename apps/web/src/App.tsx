@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { FeedPanel } from './components/FeedPanel';
 import { DecisionLogPanel } from './components/DecisionLogPanel';
 import { HistoryPanel } from './components/HistoryPanel';
@@ -254,6 +254,59 @@ function App() {
       <main className="main-grid">
         {activeTab === 'dashboard' ? (
           <>
+            <section className="workflow-overview">
+              <div className="workflow-heading">
+                <div>
+                  <span className="workflow-eyebrow">HOW NOIRADFINTECH WORKS</span>
+                  <h2>Autonomous Sponsorship Workflow</h2>
+                  <p>Follow a creator opportunity from trend detection to a simulated settlement record.</p>
+                </div>
+                <span className="workflow-demo-label">DEMO ENVIRONMENT</span>
+              </div>
+
+              <div className="workflow-stages">
+                <article className="workflow-stage">
+                  <span className="workflow-number">01</span>
+                  <div>
+                    <h3>Detect</h3>
+                    <p>Find trending creator posts and evaluate their Viral Velocity Index.</p>
+                    <span>Social Feed · VVI</span>
+                  </div>
+                </article>
+
+                <article className="workflow-stage">
+                  <span className="workflow-number">02</span>
+                  <div>
+                    <h3>Analyze</h3>
+                    <p>Compare eligible posts with sample sponsor campaigns.</p>
+                    <span>Campaign Matching · Decision Log</span>
+                  </div>
+                </article>
+
+                <article className="workflow-stage">
+                  <span className="workflow-number">03</span>
+                  <div>
+                    <h3>Verify</h3>
+                    <p>Demonstrate device, brand-safety, and spending-policy checks.</p>
+                    <span>Noir Policy · Escrow Simulation</span>
+                  </div>
+                </article>
+
+                <article className="workflow-stage">
+                  <span className="workflow-number">04</span>
+                  <div>
+                    <h3>Settle</h3>
+                    <p>Review a demo checkout, transaction reference, and sample webhook event.</p>
+                    <span>Velo Checkout Demo · Webhook Demo</span>
+                  </div>
+                </article>
+              </div>
+
+              <p className="workflow-disclaimer">
+                Important: Social metrics, policy checks, escrow, checkout, and webhook examples are demonstrations.
+                No live platform APIs, on-chain contract execution, or real payments are performed here.
+              </p>
+            </section>
             <FeedPanel posts={feed} />
 
             <CampaignPreviewPanel apiBase={API_BASE} />

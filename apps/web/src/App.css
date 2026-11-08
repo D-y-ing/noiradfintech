@@ -1681,3 +1681,145 @@ label,
     font-size: 0.8rem;
   }
 }
+
+
+/* =========================================================
+   WORKFLOW OVERVIEW — DASHBOARD GUIDE
+   ========================================================= */
+
+.workflow-overview {
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: 26px;
+  border: 1px solid rgba(87, 213, 201, 0.2);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(16, 34, 49, 0.96), rgba(12, 25, 39, 0.96));
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16);
+}
+
+.workflow-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.workflow-eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  color: #65d9cd;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.workflow-heading h2 {
+  margin: 0;
+  color: #f4f8fb;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  letter-spacing: -0.035em;
+}
+
+.workflow-heading p {
+  margin: 8px 0 0;
+  color: #a9bac8;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.workflow-demo-label {
+  flex-shrink: 0;
+  padding: 7px 11px;
+  border: 1px solid rgba(101, 217, 205, 0.3);
+  border-radius: 999px;
+  color: #75e2d5;
+  background: rgba(101, 217, 205, 0.08);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.workflow-stages {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.workflow-stage {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  min-width: 0;
+  padding: 17px 14px;
+  border: 1px solid rgba(160, 190, 205, 0.15);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.workflow-number {
+  display: grid;
+  flex: 0 0 35px;
+  width: 35px;
+  height: 35px;
+  place-items: center;
+  border-radius: 10px;
+  color: #071b25;
+  background: #65d9cd;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.workflow-stage h3 {
+  margin: 1px 0 7px;
+  color: #f3f8fa;
+  font-size: 0.98rem;
+}
+
+.workflow-stage p {
+  min-height: 58px;
+  margin: 0 0 10px;
+  color: #b1c1cd;
+  font-size: 0.77rem;
+  line-height: 1.55;
+}
+
+.workflow-stage div > span {
+  color: #65d9cd;
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.workflow-disclaimer {
+  margin: 18px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(160, 190, 205, 0.15);
+  color: #a9bac8;
+  font-size: 0.74rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+  .workflow-stages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .workflow-overview {
+    padding: 19px;
+  }
+
+  .workflow-heading {
+    flex-direction: column;
+  }
+
+  .workflow-stages {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-stage p {
+    min-height: 0;
+  }
+}

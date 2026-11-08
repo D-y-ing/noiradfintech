@@ -71,14 +71,14 @@ export function BudgetPanel({ budget, guardrails }: BudgetPanelProps) {
           <div className="budget-label">Escrow Balance</div>
           <div className="budget-value">{formatXLM(budget.escrowBalanceXlm)} XLM</div>
           <div className="budget-label" style={{marginTop: '4px', fontSize: '0.6rem', color: 'var(--text-muted)'}}>
-            Funds available for agent to pay creators
+            Displayed demo balance. No funds are held or transferred.
           </div>
         </div>
         <div className="budget-card">
           <div className="budget-label">Per-Deal Cap</div>
           <div className="budget-value">{formatXLM(budget.perDealCapXlm)} XLM</div>
           <div className="budget-label" style={{marginTop: '4px', fontSize: '0.6rem', color: 'var(--text-muted)'}}>
-            Max per sponsorship payment
+            Maximum amount in the demo budget example
           </div>
         </div>
         <div className={`budget-card ${dailySpentPct > 80 ? 'warning' : ''} ${dailySpentPct >= 100 ? 'danger' : ''}`}>
@@ -94,7 +94,7 @@ export function BudgetPanel({ budget, guardrails }: BudgetPanelProps) {
           <div className="budget-label">Min Escrow Left</div>
           <div className="budget-value">1.0 XLM</div>
           <div className="budget-label" style={{marginTop: '4px', fontSize: '0.6rem', color: 'var(--text-muted)'}}>
-            Reserve to keep escrow active
+            Illustrative demo reserve threshold
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@ export function BudgetPanel({ budget, guardrails }: BudgetPanelProps) {
       <div className="guardrails-list">
         <div className="guardrail-item" style={{gridColumn: '1 / -1', backgroundColor: 'var(--bg)', padding: '10px 12px', marginBottom: '8px', borderRadius: 'var(--radius-sm)'}}>
           <span className="guardrail-label" style={{fontWeight: 600, color: 'var(--text)'}}>What are Guardrails?</span>
-          <span className="guardrail-value" style={{fontSize: '0.75rem', textAlign: 'right', maxWidth: '60%'}}>Hard limits enforced by code + Noir on-chain to prevent runaway spending</span>
+          <span className="guardrail-value" style={{fontSize: '0.75rem', textAlign: 'right', maxWidth: '60%'}}>Demo spending limits for this walkthrough. No on-chain enforcement is active.</span>
         </div>
         <div className="guardrail-item">
           <span className="guardrail-label">Daily Spent (Guardrails)</span>
@@ -113,7 +113,7 @@ export function BudgetPanel({ budget, guardrails }: BudgetPanelProps) {
         <div className="guardrail-item">
           <span className="guardrail-label">Posts Paid Today</span>
           <span className="guardrail-value">{guardrails?.paidPostsCount || 0}</span>
-          <div className="budget-label" style={{fontSize: '0.6rem', color: 'var(--text-muted)', marginTop: '2px'}}>Unique posts paid this 24h window</div>
+          <div className="budget-label" style={{fontSize: '0.6rem', color: 'var(--text-muted)', marginTop: '2px'}}>Posts recorded by the demo counter</div>
         </div>
         <div className="guardrail-item">
           <span className="guardrail-label">Daily Resets At</span>
@@ -123,7 +123,7 @@ export function BudgetPanel({ budget, guardrails }: BudgetPanelProps) {
         <div className="guardrail-item">
           <span className="guardrail-label">Policy Expires</span>
           <span className="guardrail-value">{formatDate(budget.expiresAt)}</span>
-          <div className="budget-label" style={{fontSize: '0.6rem', color: 'var(--text-muted)', marginTop: '2px'}}>Agent key expires, payments stop</div>
+          <div className="budget-label" style={{fontSize: '0.6rem', color: 'var(--text-muted)', marginTop: '2px'}}>Displayed demo policy expiry</div>
         </div>
         {budget.lastTopupAt && (
           <div className="guardrail-item">

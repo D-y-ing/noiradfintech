@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 
 interface TopupPanelProps {
   apiBase: string;
@@ -125,11 +125,11 @@ export function TopupPanel({
           >
             <polyline points="20 6 9 17 4 12" />
           </svg>
-          <span className="panel-title-text">Velo Top-Up</span>
+          <span className="panel-title-text">Velo Checkout Demo</span>
         </div>
 
         <span className="panel-subtitle">
-          Brand funds campaign budget
+          Simulated checkout walkthrough
         </span>
       </div>
 
