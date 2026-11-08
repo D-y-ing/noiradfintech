@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 interface Post {
   id: string;
@@ -65,6 +65,15 @@ export function FeedPanel({ posts }: FeedPanelProps) {
         </div>
         <span className="panel-subtitle">{posts.length} posts • {posts.filter(p => p.flagged).length} flagged</span>
       </div>
+            <div className="feed-source-notice">
+        <strong>SIMULATED SOCIAL DATA</strong>
+        <span>X, TikTok, and Instagram entries are demo records. Live platform API connections are not enabled.</span>
+      </div>
+      <div className="feed-platform-summary">
+        <span>X: {posts.filter(p => p.platform === 'x').length} posts</span>
+        <span>TikTok: {posts.filter(p => p.platform === 'tiktok').length} posts</span>
+        <span>Instagram: {posts.filter(p => p.platform === 'instagram').length} posts</span>
+      </div>
       <div className="feed-list">
         {sortedPosts.length === 0 ? (
           <div style={{ padding: '40px 20px', textAlign: 'center', color: 'var(--text-muted)' }}>
@@ -81,7 +90,8 @@ export function FeedPanel({ posts }: FeedPanelProps) {
                 <div className="feed-meta">
                   <span className="creator-handle">{post.creatorHandle}</span>
                   <PlatformBadge platform={post.platform} />
-                  {post.flagged && <span className="flag-badge">⚡ Flagged</span>}
+                  <span className="feed-source-tag">DEMO DATA</span>
+                  {post.flagged && <span className="flag-badge">âš¡ Flagged</span>}
                 </div>
                 <p className="feed-text">{post.content}</p>
                 <div className="feed-metrics">
