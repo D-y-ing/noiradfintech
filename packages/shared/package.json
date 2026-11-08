@@ -1,12 +1,15 @@
-{
+﻿{
   "name": "@agentic-ad-broker/shared",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
   "scripts": {
     "build": "tsc",
@@ -14,7 +17,7 @@
     "lint": "eslint src --ext .ts"
   },
   "dependencies": {
-    "@stellar/stellar-sdk": "^16.0.1"
+    "@stellar/stellar-sdk": "^16.0.0"
   },
   "devDependencies": {
     "typescript": "^5.6.0"
