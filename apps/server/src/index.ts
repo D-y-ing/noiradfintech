@@ -362,7 +362,7 @@ app.post('/api/topup', async (req: Request, res: Response) => {
     });
 
     const session: TopupSession = {
-      checkoutUrl,
+      checkoutUrl: checkoutUrl ?? '',
       paymentIntentId,
       amountXlm,
       status: 'created',
@@ -373,7 +373,7 @@ app.post('/api/topup', async (req: Request, res: Response) => {
     saveData();
 
     res.json({
-      checkoutUrl,
+      checkoutUrl: checkoutUrl ?? '',
       paymentIntentId,
       amountXlm,
     });
@@ -392,7 +392,7 @@ app.get('/api/topup/:id', async (req: Request, res: Response) => {
 
     const session = topupSessions.get(id);
     if (session) {
-      const settled = intent.status === 'succeeded' || intent.status === 'paid';
+      const settled = String(intent.status) === 'succeeded' || intent.status === 'paid';
       if (settled) {
         creditTopupOnce(id, intent.amount);
       } else if (['created', 'pending', 'failed', 'cancelled'].includes(String(intent.status))) {

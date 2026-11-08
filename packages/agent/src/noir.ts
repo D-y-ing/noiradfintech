@@ -104,7 +104,7 @@ export async function checkPayment(amountXlm: string): Promise<{ ok: boolean; re
       amount: stroops(amountXlm),
     });
 
-    return { ok: check.ok, reason: check.reason };
+    return check.ok ? { ok: true } : { ok: false, reason: check.reason };
   } catch (error) {
     if (error instanceof NoirContractError) {
       return { ok: false, reason: error.name };

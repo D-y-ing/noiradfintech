@@ -222,7 +222,7 @@ Decide sponsorship.`;
       throw new Error(`LLM API error: ${response.status}`);
     }
 
-    const data = await response.json();
+    const data = (await response.json()) as any;
     const content = data.choices[0]?.message?.content || '{}';
     const parsed = JSON.parse(content);
     return LLMSchema.parse(parsed);
@@ -248,7 +248,7 @@ Decide sponsorship.`;
         throw new Error(`Anthropic API error: ${response.status}`);
       }
 
-      const data = await response.json();
+      const data = (await response.json()) as any;
       const content = data.content[0]?.text || '{}';
       const parsed = JSON.parse(content);
       return LLMSchema.parse(parsed);
