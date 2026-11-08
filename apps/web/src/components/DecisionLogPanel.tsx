@@ -60,7 +60,7 @@ export function DecisionLogPanel({ decisions, onViewHistory }: DecisionLogPanelP
           <div style={{ padding: '40px 20px', textAlign: 'center', color: 'var(--text-muted)' }}>
             <div>No sponsorship decisions yet.</div>
             <div style={{ fontSize: '0.8rem', marginTop: 8 }}>
-              The agent scans automatically every 30 seconds. Use Run Agent for an immediate scan.
+              Automatic scanning is disabled in this demo. Use Run Agent to perform a manual read-only scan. No payments are sent.
             </div>
           </div>
         ) : (
