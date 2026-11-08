@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 
 interface HistoryDecision {
   decision: {
@@ -39,6 +40,9 @@ export function HistoryPanel({
   decisions: HistoryDecision[];
   topupHistory: TopupHistoryRecord[];
 }) {
+  const [selectedTopup, setSelectedTopup] =
+    useState<TopupHistoryRecord | null>(null);
+
   const totalRecords = decisions.length + topupHistory.length;
 
   return (
@@ -89,7 +93,7 @@ export function HistoryPanel({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View transaction ↗
+                  View transaction →
                 </a>
               )}
             </article>
@@ -114,9 +118,18 @@ export function HistoryPanel({
             .slice()
             .sort((a, b) => b.createdAt - a.createdAt)
             .map((item, index) => (
-              <article
+              <button
+                type="button"
                 className="history-row"
                 key={`${item.createdAt}-${index}`}
+                onClick={() => setSelectedTopup(item)}
+                style={{
+                  width: '100%',
+                  textAlign: 'left',
+                  cursor: 'pointer',
+                  color: 'inherit',
+                  font: 'inherit',
+                }}
               >
                 <div className="history-row-top">
                   <span className="decision-status">
@@ -130,9 +143,89 @@ export function HistoryPanel({
                   <span>{item.amountXlm} XLM</span>
                 </div>
 
-                <p>Previously recorded top-up. Historical record only.</p>
-              </article>
+                <p>Click to view transaction details →</p>
+              </button>
             ))}
+        </div>
+      )}
+
+      {selectedTopup && (
+        <div
+          className="topup-details-overlay"
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 1000,
+            background: 'rgba(0, 0, 0, 0.75)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '20px',
+          }}
+          onClick={() => setSelectedTopup(null)}
+        >
+          <div
+            className="panel topup-details"
+            style={{
+              width: '100%',
+              maxWidth: '440px',
+              padding: '24px',
+              background: '#151515',
+              border: '1px solid #333',
+              borderRadius: '12px',
+            }}
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="panel-header">
+              <h3>Transaction Details</h3>
+              <button
+                type="button"
+                onClick={() => setSelectedTopup(null)}
+              >
+                ✕
+              </button>
+            </div>
+
+            <p>Historical Velo Top-up</p>
+
+            <div className="history-row-title">
+              <strong>Amount</strong>
+              <span>{selectedTopup.amountXlm} XLM</span>
+            </div>
+
+            <div className="history-row-title">
+              <strong>Recorded status</strong>
+              <span>{selectedTopup.status}</span>
+            </div>
+
+            <div className="history-row-title">
+              <strong>Date</strong>
+              <span>{formatTime(selectedTopup.createdAt)}</span>
+            </div>
+
+            <p>
+              This is an archived transaction record. Its current payment
+              status has not been verified.
+            </p>
+
+            <button
+              type="button"
+              disabled
+              style={{
+                width: '100%',
+                padding: '12px',
+                opacity: 0.5,
+                cursor: 'not-allowed',
+              }}
+            >
+              Pay — Unavailable
+            </button>
+
+            <p>
+              Original checkout sessions are not reactivated from historical
+              records.
+            </p>
+          </div>
         </div>
       )}
     </section>
