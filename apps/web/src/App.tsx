@@ -5,6 +5,7 @@ import { HistoryPanel } from './components/HistoryPanel';
 import { BudgetPanel } from './components/BudgetPanel';
 import { AnalyticsPanel } from './components/AnalyticsPanel';
 import { TopupPanel } from './components/TopupPanel';
+import { CampaignPreviewPanel } from './components/CampaignPreviewPanel';
 import { Header } from './components/Header';
 import './App.css';
 
@@ -254,6 +255,8 @@ function App() {
           <>
             <FeedPanel posts={feed} />
 
+            <CampaignPreviewPanel apiBase={API_BASE} />
+
             <DecisionLogPanel
               decisions={decisions}
               onViewHistory={() => setActiveTab('history')}
@@ -290,3 +293,4 @@ function App() {
 }
 
 export default App;
+

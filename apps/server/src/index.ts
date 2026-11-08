@@ -304,6 +304,119 @@ app.post('/api/agent/run', (_req: Request, res: Response) => {
     });
   }
 });
+// Generate read-only campaign recommendation previews.
+// Demo Credits are simulated values only. No payments are executed.
+app.get('/api/agent/previews', (_req: Request, res: Response) => {
+  try {
+    const candidates = simulatedFeed.getCandidates();
+
+    const campaigns = [
+      {
+        name: 'Dance & Movement Demo Campaign',
+        category: 'Entertainment',
+        keywords: ['dance', 'trend', 'movement', 'music'],
+      },
+      {
+        name: 'Learning & Productivity Demo Campaign',
+        category: 'Education',
+        keywords: ['productivity', 'hack', 'learn', 'study', 'tutorial'],
+      },
+      {
+        name: 'Art & Creativity Demo Campaign',
+        category: 'Creative',
+        keywords: ['artist', 'art', 'sketch', 'design', 'creative', 'color', 'studio'],
+      },
+    ];
+
+    const sensitiveKeywords = [
+      'violence',
+      'weapon',
+      'hate',
+      'scam',
+      'adult',
+      'explicit',
+    ];
+
+    const previews = candidates.map(candidate => {
+      const content = candidate.post.content.toLowerCase();
+
+      const matches = campaigns.map(campaign => ({
+        campaign,
+        matchedKeywords: campaign.keywords.filter(keyword =>
+          content.includes(keyword)
+        ),
+      }));
+
+      matches.sort(
+        (a, b) => b.matchedKeywords.length - a.matchedKeywords.length
+      );
+
+      const bestMatch = matches[0];
+      const hasCampaignMatch = bestMatch.matchedKeywords.length > 0;
+
+      const campaign = hasCampaignMatch
+        ? bestMatch.campaign
+        : {
+            name: 'General Creator Demo Campaign',
+            category: 'General',
+            keywords: [],
+          };
+
+      const matchedKeywords = hasCampaignMatch
+        ? bestMatch.matchedKeywords
+        : [];
+
+      const campaignFit = campaign.keywords.length > 0
+        ? Math.round((matchedKeywords.length / campaign.keywords.length) * 100)
+        : 0;
+
+      const brandSafe = !sensitiveKeywords.some(keyword =>
+        content.includes(keyword)
+      );
+
+      const demoValue = Math.min(
+        1000,
+        Math.max(10, Math.round(candidate.vvi / 1000))
+      );
+
+      return {
+        postId: candidate.post.id,
+        creatorHandle: candidate.post.creatorHandle,
+        platform: candidate.post.platform,
+        content: candidate.post.content,
+        vvi: candidate.vvi,
+        campaign: campaign.name,
+        category: campaign.category,
+        campaignFit,
+        matchedKeywords,
+        demoValue,
+        brandSafe,
+        reason: hasCampaignMatch
+          ? `Matched ${matchedKeywords.length} campaign keyword(s): ${matchedKeywords.join(', ')}. This is a rule-based demo recommendation.`
+          : 'No specific campaign keywords matched. Assigned to the general demo campaign.',
+        source: 'rule-based-demo',
+      };
+    });
+
+    res.json({
+      success: true,
+      simulated: true,
+      previews,
+      message: 'Read-only campaign previews generated. No payments were sent.',
+    });
+  } catch (error) {
+    console.error('Campaign preview error:', error);
+
+    res.status(500).json({
+      success: false,
+      simulated: true,
+      message: error instanceof Error
+        ? error.message
+        : 'Could not generate campaign previews.',
+    });
+  }
+});
+
 // Force overspend (demo moment)
 app.post('/api/agent/overspend', async (_req: Request, res: Response) => {
   try {
@@ -665,4 +778,5 @@ process.on('SIGTERM', () => {
 // Manual Run Agent uses the read-only demo endpoint.
 
 export { app, velo, decisionLog, budgetState, topupSessions };
+
 
